@@ -198,7 +198,7 @@
     <iframe src="https://p.bestbfs.org" style="width:100%; height:400px;"></iframe>
   </div>
 <!-- Game Container -->
-<div class="game-container" id="gameContainer">
+<div class="games-container">
   <!-- 1. BitLife -->  
   <div class="game" data-name="bitlife" onclick="openGame('https://class-911.github.io/files/BitLife/index.html')">
     <img src="https://i.postimg.cc/c1jhS18w/IMG-8366.jpg" alt="BitLife" />
@@ -311,7 +311,6 @@
   <div class="game" data-name="stickslasher" onclick="openGame('https://datseagull.github.io/p/stickslasher.html')">
     <img src="https://i.postimg.cc/MMTkf2yc/IMG-8523.jpg" alt="Stick Slasher" />
   </div>
-  <!-- New Games -->
   <!-- 29. Spotify -->
   <div class="game" data-name="spotify" onclick="openGame('https://classroom70x.github.io/en/spotify.github.io/')">
     <img src="https://postimg.cc/6Tmb3kxJ" alt="Spotify" />
@@ -322,6 +321,11 @@
   </div>
 </div>
 
+<script>
+  function openGame(url) {
+    window.open(url, '_blank');
+  }
+</script>
 <!-- Modal for Embedded Game -->
 <div id="gameModal" class="modal">
   <button onclick="closeModal()">Close</button>
